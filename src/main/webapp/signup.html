@@ -4,112 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup - Hospital Management App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        nav {
-            background-color: #e60000;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        h1 {
-            text-align: center;
-            color: #e60000;
-            margin-top: 50px;
-        }
-
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
-        }
-
-        label {
-            font-size: 16px;
-            margin-top: 10px;
-            display: block;
-            color: #333;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-top: 8px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #e60000;
-            color: white;
-            border: none;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #cc0000;
-        }
-
-        footer {
-            background-color: #e60000;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <nav>
         <a href="index.html">Home</a>
         <a href="login.html">Login</a>
         <a href="signup.html">Signup</a>
     </nav>
 
-    <h1>Signup to Hospital Management App</h1>
+    <h1>Create Account</h1>
 
-    <form action="signup" method="POST">
+    <form class="page-card" action="signup" method="POST">
+        <div id="msg"></div>
         <label for="email">Email</label>
         <input type="email" name="email" id="email" required>
 
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" required>
+        <input type="password" name="password" id="password" required minlength="4">
 
-        <button type="submit">Submit</button>
+        <button type="submit">Sign Up</button>
     </form>
 
-    <footer>© 2025 Hospital Management App | All rights reserved</footer>
-
+    <footer>&copy; 2025 Hospital Management App | All rights reserved</footer>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const msg = document.getElementById('msg');
+        if (params.get('error') === 'email-exists') {
+            msg.className = 'alert alert-error';
+            msg.textContent = 'This email is already registered.';
+        } else if (params.get('error')) {
+            msg.className = 'alert alert-error';
+            msg.textContent = 'Signup failed. Please try again.';
+        }
+    </script>
 </body>
 </html>

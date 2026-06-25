@@ -7,8 +7,8 @@ import java.sql.PreparedStatement;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.hma.packages.controller.DoctorAvailableServlet;
 import com.hma.packages.service.DoctorService;
+import com.hma.packages.util.DbConnection;
 
 public class DoctorServiceImpl implements DoctorService{
 
@@ -16,9 +16,7 @@ public class DoctorServiceImpl implements DoctorService{
 	public void makeDoctorAvailable(HttpServletRequest req, HttpServletResponse res) {
 		
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-
-			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "root");
+			Connection connection = DbConnection.getConnection();
 //			prepare the query
 			PreparedStatement statement = connection
 					.prepareStatement("update doctor set availability = true where doctorId = ?");
@@ -45,9 +43,7 @@ public class DoctorServiceImpl implements DoctorService{
 	public void makeDoctorUnAvailable(HttpServletRequest req, HttpServletResponse res) {
 
 		try {
-			Class.forName("com.mysql.cj.jdbc.Driver");
-
-			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "root");
+			Connection connection = DbConnection.getConnection();
 //			prepare the query
 			PreparedStatement statement = connection
 					.prepareStatement("update doctor set availability = false where doctorId = ?");

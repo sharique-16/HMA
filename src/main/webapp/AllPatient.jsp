@@ -1,72 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
+<%@page import="com.hma.packages.util.DbConnection"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Patient List</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #ffebe6;
-        color: #800000;
-        margin: 0;
-        padding: 0;
-    }
-    nav {
-        background-color: #b30000;
-        padding: 15px;
-        text-align: center;
-    }
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        margin: 0 15px;
-    }
-    h1 {
-        text-align: center;
-        margin-top: 20px;
-    }
-    table {
-        width: 80%;
-        margin: 20px auto;
-        border-collapse: collapse;
-        background-color: white;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-    th, td {
-        border: 1px solid #b30000;
-        padding: 10px;
-        text-align: center;
-    }
-    th {
-        background-color: #b30000;
-        color: white;
-    }
-    tr:nth-child(even) {
-        background-color: #ffe6e6;
-    }
-    button {
-        background-color: #b30000;
-        color: white;
-        border: none;
-        padding: 8px 12px;
-        cursor: pointer;
-        border-radius: 5px;
-    }
-    button:hover {
-        background-color: #800000;
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>All Patients</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav>
         <a href="dashboard.html">Dashboard</a>
         <a href="login.html">Logout</a>
     </nav>
+
     <h1>All Patients</h1>
+
     <table>
         <tr>
             <th>Patient ID</th>
@@ -80,41 +29,47 @@
         </tr>
         <%
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "root");
-            PreparedStatement statement = connection.prepareStatement("select * from patient");
+            Connection connection = DbConnection.getConnection();
+            PreparedStatement statement = connection.prepareStatement("select * from patient order by patientId desc");
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
                 int id = resultSet.getInt("patientId");
                 String name = resultSet.getString("name");
                 int age = resultSet.getInt("age");
-                long mobile = resultSet.getLong("mobile");
+                String mobile = resultSet.getString("mobile");
                 String address = resultSet.getString("address");
                 String gender = resultSet.getString("gender");
-                String profileCreated = resultSet.getString("time_Stamp");
+                String profileCreated = resultSet.getString("created_at");
         %>
         <tr>
-            <td><%=id%></td>
-            <td><%=name%></td>
-            <td><%=age%></td>
-            <td><%=mobile%></td>
-            <td><%=address%></td>
-            <td><%=gender%></td>
-            <td><%=profileCreated %></td>
+            <td><%= id %></td>
+            <td><%= name %></td>
+            <td><%= age %></td>
+            <td><%= mobile %></td>
+            <td><%= address %></td>
+            <td><%= gender %></td>
+            <td><%= profileCreated %></td>
             <td>
-                <form action="PatientHistory.jsp">
-                    <input type="hidden" name="id" value="<%=id%>">
+                <form action="PatientHistory.jsp" method="get">
+                    <input type="hidden" name="id" value="<%= id %>">
                     <button type="submit">View History</button>
                 </form>
             </td>
         </tr>
         <%
             }
+            resultSet.close();
+            statement.close();
             connection.close();
         } catch (Exception e) {
+        %>
+        <tr><td colspan="8">Error loading patients: <%= e.getMessage() %></td></tr>
+        <%
             e.printStackTrace();
         }
         %>
     </table>
+
+    <footer>&copy; 2025 Hospital Management App | All rights reserved</footer>
 </body>
 </html>

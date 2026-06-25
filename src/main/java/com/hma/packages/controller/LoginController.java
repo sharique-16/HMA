@@ -14,9 +14,15 @@ import com.hma.packages.services.impl.AuthenticationServiceImpl;
 @WebServlet("/login")
 public class LoginController extends HttpServlet {
 
+	private final AuthenticationService service = new AuthenticationServiceImpl();
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		AuthenticationService service = new AuthenticationServiceImpl();
+		service.login(req, resp);
+	}
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		service.login(req, resp);
 	}
 }

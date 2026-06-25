@@ -1,73 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Dashboard</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #ffebe6;
-        color: #800000;
-        margin: 0;
-        padding: 0;
-    }
-    nav {
-        background-color: #b30000;
-        padding: 15px;
-        text-align: center;
-    }
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        margin: 0 15px;
-    }
-    h1 {
-        text-align: center;
-        margin-top: 20px;
-    }
-    .container {
-        width: 60%;
-        margin: 30px auto;
-        padding: 20px;
-        background: white;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .options {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-    .options a {
-        background-color: #b30000;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 16px;
-    }
-    .options a:hover {
-        background-color: #800000;
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<nav>
-    <a href="dashboard.html">Dashboard</a>
-    <a href="login.html">Logout</a>
-</nav>
-<h1>Dashboard</h1>
-<div class="container">
-    <div class="options">
-        <a href="createPatientProfile.html">Create Patient Profile</a>
-        <a href="createDoctorProfile.html">Create Doctor Profile</a>
-        <a href="AllPatient.jsp">All Patients</a>
-        <a href="AllDoctors.jsp">All Doctors</a>
-        <a href="appointment.jsp">Book Appointment</a>
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Logout</a>
+    </nav>
+
+    <h1>Dashboard</h1>
+
+    <div class="page-card" style="max-width: 720px;">
+        <p style="text-align:center; margin-bottom: 20px;">Choose an action below to manage patients, doctors, and appointments.</p>
+        <div class="dashboard-grid">
+            <a class="btn" href="createPatientProfile.html">Create Patient Profile</a>
+            <a class="btn" href="createDoctorProfile.html">Create Doctor Profile</a>
+            <a class="btn" href="AllPatient.jsp">All Patients</a>
+            <a class="btn" href="AllDoctors.jsp">All Doctors</a>
+            <a class="btn" href="appointment.jsp">Book Appointment</a>
+        </div>
     </div>
-</div>
+
+    <footer>&copy; 2025 Hospital Management App | All rights reserved</footer>
 </body>
 </html>

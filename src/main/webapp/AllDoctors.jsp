@@ -1,88 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*" %>
+<%@ page import="com.hma.packages.util.DbConnection" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctors List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        nav {
-            background-color: #e60000;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        h1 {
-            text-align: center;
-            color: #e60000;
-            margin-top: 30px;
-        }
-
-        table {
-            width: 80%;
-            margin: 30px auto;
-            border-collapse: collapse;
-            background-color: white;
-        }
-
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #e60000;
-            color: white;
-        }
-
-        button {
-            background-color: #e60000;
-            color: white;
-            padding: 8px 20px;
-            border: none;
-            font-size: 14px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #cc0000;
-        }
-
-        footer {
-            background-color: #e60000;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>All Doctors</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav>
@@ -99,64 +23,59 @@
             <th>Age</th>
             <th>Mobile</th>
             <th>Department</th>
+            <th>Experience</th>
             <th>Availability</th>
         </tr>
-
         <%
             try {
-                Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "root");
-                PreparedStatement statement = connection.prepareStatement("SELECT * FROM doctor");
+                Connection connection = DbConnection.getConnection();
+                PreparedStatement statement = connection.prepareStatement("SELECT * FROM doctor ORDER BY doctorId DESC");
                 ResultSet resultSet = statement.executeQuery();
 
                 while (resultSet.next()) {
                     int id = resultSet.getInt("doctorId");
                     String name = resultSet.getString("name");
                     int age = resultSet.getInt("age");
-                    long mobile = resultSet.getLong("mobile");
+                    String mobile = resultSet.getString("mobile");
                     String department = resultSet.getString("department");
+                    String experience = resultSet.getString("experience");
                     boolean availability = resultSet.getBoolean("availability");
         %>
-        
         <tr>
             <td><%= id %></td>
             <td><%= name %></td>
             <td><%= age %></td>
             <td><%= mobile %></td>
             <td><%= department %></td>
+            <td><%= experience != null ? experience : "-" %></td>
             <td>
-                <%
-                    if (!availability) {
-                %>
-                        <form action="makeDoctorAvailable" method="POST">
-                            <input type="hidden" name="id" value="<%= id %>">
-                            <button type="submit">Mark as Available</button>
-                        </form>
-                <%
-                    } else {
-                %>
-                        <form action="makeDoctorUnAvailable" method="POST">
-                            <input type="hidden" name="id" value="<%= id %>">
-                            <button type="submit">Mark as Unavailable</button>
-                        </form>
-                <%
-                    }
-                %>
+                <% if (!availability) { %>
+                    <form action="makeDoctorAvailable" method="POST" style="margin:0;">
+                        <input type="hidden" name="id" value="<%= id %>">
+                        <button type="submit">Mark Available</button>
+                    </form>
+                <% } else { %>
+                    <form action="makeDoctorUnAvailable" method="POST" style="margin:0;">
+                        <input type="hidden" name="id" value="<%= id %>">
+                        <button type="submit">Mark Unavailable</button>
+                    </form>
+                <% } %>
             </td>
         </tr>
-
         <%
                 }
-
-                // Close the connection
+                resultSet.close();
+                statement.close();
                 connection.close();
             } catch (Exception e) {
+        %>
+        <tr><td colspan="7">Error loading doctors: <%= e.getMessage() %></td></tr>
+        <%
                 e.printStackTrace();
             }
         %>
     </table>
 
-    <footer>© 2025 Hospital Management App | All rights reserved</footer>
-
+    <footer>&copy; 2025 Hospital Management App | All rights reserved</footer>
 </body>
 </html>
