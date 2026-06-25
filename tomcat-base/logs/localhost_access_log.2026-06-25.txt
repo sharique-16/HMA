@@ -39,3 +39,15 @@
 0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:29:25 +0530] "GET /HospitalManagementApp/appointment.jsp?error=invalid-data HTTP/1.1" 200 1858
 0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:29:25 +0530] "GET /HospitalManagementApp/css/styles.css HTTP/1.1" 304 -
 0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:29:32 +0530] "GET /HospitalManagementApp/dashboard.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:38:48 +0530] "GET /HospitalManagementApp/ HTTP/1.1" 200 992
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:38:53 +0530] "GET /HospitalManagementApp/css/styles.css HTTP/1.1" 200 4644
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:38:53 +0530] "GET /favicon.ico HTTP/1.1" 404 683
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:38:58 +0530] "GET /HospitalManagementApp/login.html HTTP/1.1" 200 1620
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:38:58 +0530] "GET /HospitalManagementApp/css/styles.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:39:21 +0530] "POST /HospitalManagementApp/login HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:39:21 +0530] "GET /HospitalManagementApp/dashboard.html HTTP/1.1" 200 1043
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:39:21 +0530] "GET /HospitalManagementApp/css/styles.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:39:29 +0530] "GET /HospitalManagementApp/AllDoctors.jsp HTTP/1.1" 200 2322
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:39:29 +0530] "GET /HospitalManagementApp/css/styles.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:39:33 +0530] "POST /HospitalManagementApp/makeDoctorUnAvailable HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [25/Jun/2026:20:39:33 +0530] "GET /HospitalManagementApp/AllDoctors.jsp HTTP/1.1" 200 2318
