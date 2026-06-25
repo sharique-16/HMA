@@ -1,0 +1,140 @@
+17-Jun-2026 23:21:14.895 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.113
+17-Jun-2026 23:21:14.908 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 2 2025 19:51:24 UTC
+17-Jun-2026 23:21:14.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.113.0
+17-Jun-2026 23:21:14.912 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Jun-2026 23:21:14.913 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Jun-2026 23:21:14.914 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Jun-2026 23:21:14.915 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Java\jdk-17
+17-Jun-2026 23:21:14.916 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.12+8-LTS-286
+17-Jun-2026 23:21:14.918 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Jun-2026 23:21:14.920 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\sharique ahmed\OneDrive\Desktop\hma\tomcat-base
+17-Jun-2026 23:21:14.921 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\apache-tomcat-9.0.113
+17-Jun-2026 23:21:14.966 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Jun-2026 23:21:14.967 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+17-Jun-2026 23:21:14.968 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Jun-2026 23:21:14.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Jun-2026 23:21:14.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Jun-2026 23:21:14.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Jun-2026 23:21:14.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Jun-2026 23:21:14.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:/Users/sharique ahmed/OneDrive/Desktop/hma/tomcat-base\conf\logging.properties
+17-Jun-2026 23:21:14.976 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Jun-2026 23:21:14.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Jun-2026 23:21:14.978 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Jun-2026 23:21:14.979 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Jun-2026 23:21:14.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Jun-2026 23:21:14.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:/Users/sharique ahmed/OneDrive/Desktop/hma/tomcat-base
+17-Jun-2026 23:21:14.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:/Program Files/apache-tomcat-9.0.113
+17-Jun-2026 23:21:14.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:/Users/sharique ahmed/OneDrive/Desktop/hma/tomcat-base\temp
+17-Jun-2026 23:21:15.018 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\sharique ahmed\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\sharique ahmed\bin;C:\Users\sharique ahmed\AppData\Local\Programs\cursor\resources\app\resources\helpers;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Java\jdk-17\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\cursor\resources\app\bin;C:\Program Files\GitHub CLI;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\sharique ahmed\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\sharique ahmed\AppData\Local\Programs\Python\Python312;C:\Users\sharique ahmed\AppData\Local\Programs\Python\Launcher;C:\Users\sharique ahmed\AppData\Local\Microsoft\WindowsApps;C:\Users\sharique ahmed\Downloads\flutter_windows_3.22.2-stable\flutter\bin;C:\Users\sharique ahmed\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sharique ahmed\AppData\Roaming\npm;C:\Users\sharique ahmed\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\sharique ahmed\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+17-Jun-2026 23:21:16.039 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:21:16.142 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1946] milliseconds
+17-Jun-2026 23:21:16.338 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Jun-2026 23:21:16.340 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.113]
+17-Jun-2026 23:21:16.447 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\sharique ahmed\OneDrive\Desktop\hma\tomcat-base\webapps\HospitalManagementApp.war]
+17-Jun-2026 23:21:18.573 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Jun-2026 23:21:18.779 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\sharique ahmed\OneDrive\Desktop\hma\tomcat-base\webapps\HospitalManagementApp.war] has finished in [2,329] ms
+17-Jun-2026 23:21:18.804 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:21:18.928 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2785] milliseconds
+17-Jun-2026 23:22:38.183 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Jun-2026 23:22:38.185 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:22:38.318 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Jun-2026 23:22:38.375 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [HospitalManagementApp] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+17-Jun-2026 23:22:38.379 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [HospitalManagementApp] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/java.lang.Object.wait(Native Method)
+ java.base@17.0.12/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:842)
+17-Jun-2026 23:22:38.403 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:22:38.420 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:22:44.347 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.113
+17-Jun-2026 23:22:44.362 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 2 2025 19:51:24 UTC
+17-Jun-2026 23:22:44.363 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.113.0
+17-Jun-2026 23:22:44.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Jun-2026 23:22:44.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Jun-2026 23:22:44.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Jun-2026 23:22:44.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Java\jdk-17
+17-Jun-2026 23:22:44.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.12+8-LTS-286
+17-Jun-2026 23:22:44.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Jun-2026 23:22:44.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\sharique ahmed\OneDrive\Desktop\hma\tomcat-base
+17-Jun-2026 23:22:44.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\apache-tomcat-9.0.113
+17-Jun-2026 23:22:44.399 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Jun-2026 23:22:44.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+17-Jun-2026 23:22:44.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Jun-2026 23:22:44.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Jun-2026 23:22:44.403 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Jun-2026 23:22:44.404 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Jun-2026 23:22:44.405 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Jun-2026 23:22:44.406 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:/Users/sharique ahmed/OneDrive/Desktop/hma/tomcat-base\conf\logging.properties
+17-Jun-2026 23:22:44.407 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Jun-2026 23:22:44.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Jun-2026 23:22:44.409 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Jun-2026 23:22:44.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Jun-2026 23:22:44.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Jun-2026 23:22:44.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:/Users/sharique ahmed/OneDrive/Desktop/hma/tomcat-base
+17-Jun-2026 23:22:44.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:/Program Files/apache-tomcat-9.0.113
+17-Jun-2026 23:22:44.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:/Users/sharique ahmed/OneDrive/Desktop/hma/tomcat-base\temp
+17-Jun-2026 23:22:44.450 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\sharique ahmed\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\sharique ahmed\bin;C:\Users\sharique ahmed\AppData\Local\Programs\cursor\resources\app\resources\helpers;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Java\jdk-17\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\cursor\resources\app\bin;C:\Program Files\GitHub CLI;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\sharique ahmed\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\sharique ahmed\AppData\Local\Programs\Python\Python312;C:\Users\sharique ahmed\AppData\Local\Programs\Python\Launcher;C:\Users\sharique ahmed\AppData\Local\Microsoft\WindowsApps;C:\Users\sharique ahmed\Downloads\flutter_windows_3.22.2-stable\flutter\bin;C:\Users\sharique ahmed\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sharique ahmed\AppData\Roaming\npm;C:\Users\sharique ahmed\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\sharique ahmed\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+17-Jun-2026 23:22:45.213 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:22:45.283 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1439] milliseconds
+17-Jun-2026 23:22:45.416 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Jun-2026 23:22:45.416 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.113]
+17-Jun-2026 23:22:45.454 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\sharique ahmed\OneDrive\Desktop\hma\tomcat-base\webapps\HospitalManagementApp.war]
+17-Jun-2026 23:22:45.498 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\sharique ahmed\OneDrive\Desktop\hma\tomcat-base\webapps\HospitalManagementApp] was found with a last modified time that did not match the associated WAR. It will be deleted.
+17-Jun-2026 23:22:47.397 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Jun-2026 23:22:47.618 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [149] milliseconds.
+17-Jun-2026 23:22:47.714 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\sharique ahmed\OneDrive\Desktop\hma\tomcat-base\webapps\HospitalManagementApp.war] has finished in [2,259] ms
+17-Jun-2026 23:22:47.732 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:22:47.905 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2619] milliseconds
+17-Jun-2026 23:30:36.533 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+17-Jun-2026 23:30:36.534 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:30:36.635 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Jun-2026 23:30:36.680 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [HospitalManagementApp] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+17-Jun-2026 23:30:36.685 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [HospitalManagementApp] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.12/java.lang.Object.wait(Native Method)
+ java.base@17.0.12/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.12/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.12/java.lang.Thread.run(Thread.java:842)
+17-Jun-2026 23:30:36.701 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:30:36.729 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:30:42.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.113
+17-Jun-2026 23:30:42.363 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 2 2025 19:51:24 UTC
+17-Jun-2026 23:30:42.364 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.113.0
+17-Jun-2026 23:30:42.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+17-Jun-2026 23:30:42.365 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+17-Jun-2026 23:30:42.366 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Jun-2026 23:30:42.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Java\jdk-17
+17-Jun-2026 23:30:42.367 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.12+8-LTS-286
+17-Jun-2026 23:30:42.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Jun-2026 23:30:42.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\sharique ahmed\OneDrive\Desktop\hma\tomcat-base
+17-Jun-2026 23:30:42.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\apache-tomcat-9.0.113
+17-Jun-2026 23:30:42.387 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+17-Jun-2026 23:30:42.388 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+17-Jun-2026 23:30:42.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+17-Jun-2026 23:30:42.389 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+17-Jun-2026 23:30:42.390 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+17-Jun-2026 23:30:42.390 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+17-Jun-2026 23:30:42.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+17-Jun-2026 23:30:42.391 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:/Users/sharique ahmed/OneDrive/Desktop/hma/tomcat-base\conf\logging.properties
+17-Jun-2026 23:30:42.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Jun-2026 23:30:42.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Jun-2026 23:30:42.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Jun-2026 23:30:42.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+17-Jun-2026 23:30:42.393 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Jun-2026 23:30:42.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:/Users/sharique ahmed/OneDrive/Desktop/hma/tomcat-base
+17-Jun-2026 23:30:42.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:/Program Files/apache-tomcat-9.0.113
+17-Jun-2026 23:30:42.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:/Users/sharique ahmed/OneDrive/Desktop/hma/tomcat-base\temp
+17-Jun-2026 23:30:42.411 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\sharique ahmed\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\sharique ahmed\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Java\jdk-17\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\cursor\resources\app\bin;C:\Program Files\GitHub CLI;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Users\sharique ahmed\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\sharique ahmed\AppData\Local\Programs\Python\Python312;C:\Users\sharique ahmed\AppData\Local\Programs\Python\Launcher;C:\Users\sharique ahmed\AppData\Local\Microsoft\WindowsApps;C:\Users\sharique ahmed\Downloads\flutter_windows_3.22.2-stable\flutter\bin;C:\Users\sharique ahmed\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sharique ahmed\AppData\Roaming\npm;C:\Users\sharique ahmed\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\sharique ahmed\AppData\Local\GitHubDesktop\bin;C:\Users\sharique ahmed\.cursor\extensions\vscjava.vscode-java-debug-0.59.0-universal\bundled\scripts\noConfigScripts;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.]
+17-Jun-2026 23:30:42.974 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:30:43.047 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1171] milliseconds
+17-Jun-2026 23:30:43.164 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Jun-2026 23:30:43.166 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.113]
+17-Jun-2026 23:30:43.225 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\sharique ahmed\OneDrive\Desktop\hma\tomcat-base\webapps\HospitalManagementApp.war]
+17-Jun-2026 23:30:43.278 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\sharique ahmed\OneDrive\Desktop\hma\tomcat-base\webapps\HospitalManagementApp] was found with a last modified time that did not match the associated WAR. It will be deleted.
+17-Jun-2026 23:30:44.545 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17-Jun-2026 23:30:44.705 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\sharique ahmed\OneDrive\Desktop\hma\tomcat-base\webapps\HospitalManagementApp.war] has finished in [1,478] ms
+17-Jun-2026 23:30:44.719 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+17-Jun-2026 23:30:44.811 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1763] milliseconds

@@ -1,0 +1,69 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Java",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "${workspaceFolder}/build.sh"
+            ],
+            "group": "build",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Build WAR File",
+            "dependsOn": [
+                "Compile Java"
+            ],
+            "type": "shell",
+            "command": "echo",
+            "args": [
+                "WAR built by Compile Java task"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Clean Build",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-f",
+                "${workspaceFolder}/HospitalManagementApp.war"
+            ],
+            "windows": {
+                "command": "del",
+                "args": [
+                    "/F",
+                    "${workspaceFolder}\\HospitalManagementApp.war"
+                ]
+            },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Rebuild WAR",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Clean Build",
+                "Build WAR File"
+            ],
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
+
+

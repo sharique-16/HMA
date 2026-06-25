@@ -1,0 +1,29 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "C:\\Java\\jdk-17",
+            "default": true
+        }
+    ],
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "java.project.sourcePaths": [
+        "HospitalManagementApp/src/main/java"
+    ],
+    "java.project.outputPath": "HospitalManagementApp/src/main/webapp/WEB-INF/classes",
+    "java.project.referencedLibraries": [
+        "HospitalManagementApp/src/main/webapp/WEB-INF/lib/**/*.jar"
+    ],
+    "files.associations": {
+        "*.jsp": "jsp"
+    }
+}
+
+

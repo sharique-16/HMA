@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Hospital Management App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Signup</a>
+    </nav>
+
+    <h1>Login</h1>
+
+    <form class="page-card" action="login" method="POST">
+        <div id="msg"></div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+
+        <button type="submit">Sign In</button>
+    </form>
+
+    <footer>&copy; 2025 Hospital Management App | All rights reserved</footer>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const msg = document.getElementById('msg');
+        if (params.get('error') === 'invalid-credentials') {
+            msg.className = 'alert alert-error';
+            msg.textContent = 'Invalid email or password. Please try again.';
+        } else if (params.get('error')) {
+            msg.className = 'alert alert-error';
+            msg.textContent = 'Login failed. Please check your details.';
+        } else if (params.get('msg') === 'signup-success') {
+            msg.className = 'alert alert-success';
+            msg.textContent = 'Account created! You can log in now.';
+        }
+    </script>
+</body>
+</html>
